@@ -1,86 +1,88 @@
+body{
+    direction: rtl;
+}
 .header{
     background-color: rgb(59, 27, 40);
     width: 80%;
     height: 50px;
     margin:auto;
-    display: block;
+    
     
 }
-.header li{
-    display: inline-block;
-    float:right;
-    padding: 10px;
+.header>ul>li{
+    list-style:none; 
     background-color:rgb(199, 44, 70) ;
-    margin:5px 8px 0 0;
+    padding:7px;
+    margin:10px;
     border-radius: 4px;
+    color:aliceblue;
+    float: right;
     
 }
+.header>ul>li:hover{
+    background-color:rgb(226, 73, 93);
+    transition-duration: .5s;
+    
+}
+
+
+
+
 .header h1{
     padding: 3px 0 0 8px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(151, 27, 64);
 }
-.main{
+.flex-main{
     height: 600px;
     width: 70%;
     background-color: rgb(248, 248, 248);
     margin: auto;
     margin-top: 3%;
-    display:block;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+   
 }
 .box-1{
     height: 170px;
      width: 260px;
     border: 1px solid rgba(207, 162, 162, 0.822);
     border-radius: 3px;
-    display: block;
-    margin:10px 15px;
-    text-align: right;
-    float: right;
-    display: inline-block; 
-    padding: 5px;
-
+    justify-content: center;
 }
 .box-1 h2{
     font-size: 15px;
-    padding: 2px;
-    display: inline;
+ 
 }
 .box-1 img{
     border-radius: 3px;
-    float: left;
-    padding: 0 5px 0 5px;
-    display:block;
     width:120px;
     height:140px;
     
 }
-.box-1 span{
-    float: right;
-}
+/*.box-1 span{
+    
+}*/
 .box-2{
     height: 170px;
      width: 260px;
     border: 1px solid rgba(207, 162, 162, 0.822);
     border-radius: 3px;
-    display: block;
-    margin:10px 25%;
-    text-align: right;
-    position: absolute;
-    padding: 5px;
+
     
     
 }
 .box-2 h2{
     font-size: 15px;
     padding: 2px;
-    display: inline;
 }
 .box-2 img{
     border-radius: 3px;
-    float: left;
-    padding:10px 5px 0 5px;
-    display:block;
+    
+    
     width:130px;
     height:140px;
     
@@ -90,12 +92,7 @@
      width: 260px;
     border: 1px solid rgba(207, 162, 162, 0.822);
     border-radius: 3px;
-    display: blcok;
-    margin:10px 15px;
-    text-align: right;
-    float:left;
-    display: inline-block;
-    padding: 5px;
+
 
     
 }
